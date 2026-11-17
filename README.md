@@ -36,7 +36,6 @@ The reference solution:
 - Handles missing arguments and common input errors.
 
 ## Reward Design
-
 The verifier uses a weighted dense reward:
 
 | Check | Weight |
@@ -142,3 +141,9 @@ The ablation experiment investigates how this reward-design change affects agent
 ├── ai_transcripts/
 ├── README.md
 └── .gitignore
+
+## Loom Video Demonstration
+
+Project walkthrough and demonstration:
+
+https://www.loom.com/share/0d6f45afc78c4a63ab3034a074a29bba
