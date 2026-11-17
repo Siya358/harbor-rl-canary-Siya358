@@ -1,0 +1,47 @@
+{
+    "schema_version": 1,
+    "id": "92cb013d-5fc1-4045-9e35-262602d7d3dd",
+    "started_at": "2026-11-17T22:01:10.272516",
+    "updated_at": "2026-11-17T22:04:12.728453",
+    "finished_at": "2026-11-17T22:04:12.728453",
+    "n_total_trials": 3,
+    "stats": {
+        "n_completed_trials": 3,
+        "n_errored_trials": 1,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "terminus-2__nvidia/nemotron-3.5-super-vl:free__adhoc": {
+                "n_trials": 2,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "pass_at_k": {
+                    "2": 1.0
+                },
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "reconcile-bug-ablation__M3Dn6Aa",
+                            "reconcile-bug-ablation__ssHBA6z"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "RuntimeError": [
+                        "reconcile-bug-ablation__7ecbQSQ"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 34006,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 6472,
+        "cost_usd": null
+    }
+}
