@@ -95,7 +95,7 @@ The earlier Gemini 2.5 Flash attempt encountered a model availability error. Gem
 
 **Oracle validation:** Passed (1 trial, reward 1.00, zero exceptions).
 
-**LLM ablation evaluation:** In progress. Results will be added after all three trials finish.
+**LLM ablation evaluation:** Completed successfully. All 3 trials achieved reward 1.00, with 0 exceptions. Mean reward: 1.000; Pass@2: 1.000; runtime: 5m 56s.
 
 ### Experimental Methodology
 
@@ -109,7 +109,7 @@ The earlier Gemini 2.5 Flash attempt encountered a model availability error. Gem
 
 Dense rewards provide partial credit and indicate which parts of a task an agent successfully completed. Binary rewards provide a simpler success signal but do not distinguish partial progress from complete failure.
 
-The ablation experiment investigates how this reward-design change affects agent performance. Conclusions will be based on the recorded trial results rather than assumptions.
+The ablation experiment investigates how this reward-design change affects agent performance. Both the dense-reward baseline and binary-reward ablation achieved a mean reward of 1.000 across 3 trials, with 0 exceptions. No performance difference was observed in these small evaluations; larger experiments would be needed for stronger conclusions.
 
 ## Repository Structure
 
@@ -117,6 +117,17 @@ The ablation experiment investigates how this reward-design change affects agent
 .
 ├── tasks/
 │   ├── reconcile-bug/
+│       ├── task.toml
+│       ├── instruction.md
+│       ├── environment/
+│       │   ├── Dockerfile
+│       │   └── reconcile.py
+│       ├── solution/
+│       │   ├── solve.sh
+│       │   └── hack.sh
+│       └── tests/
+│           └── test.sh
+│   └── reconcile-bug-ablation/
 │       ├── task.toml
 │       ├── instruction.md
 │       ├── environment/
